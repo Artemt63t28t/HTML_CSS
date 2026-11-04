@@ -3,3 +3,24 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.alert-info {
+  background: rgb(224, 208, 188);
+  border: 1px solid rgb(85, 38, 6);
+  padding: 12px 8px;
+  border-radius: 5px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
