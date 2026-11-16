@@ -16,7 +16,8 @@ body {
 
 .shapka{
     width: 100%;
-    padding-top: 25px;
+    border: 1px solid #000000;
+    padding: 25px 0;
 }
 
 .shapka_content{
@@ -76,3 +77,101 @@ body {
     border: none;
 }
 
+.podval{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid #000000;
+}
+
+.podval_content{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.podval_info{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 80px;
+}
+
+.podval_text1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.podval_text2{
+    max-width: 300px;
+    font-size: 14px;
+}
+
+.podval_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.podval_icon img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.podval_tablic{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.podval_stolb{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.podval_kegel{
+    font-size: 14px;
+}
+
+.podval_li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .podval_info {
+        grid-template-columns: 1fr;
+    }
+
+    .podval_tablic {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .shapka_content {
+        flex-wrap: wrap;
+    }
+
+    .content_v_navig {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .podval_tablic {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
